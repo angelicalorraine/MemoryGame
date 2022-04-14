@@ -2,26 +2,34 @@ import { toBeChecked } from "@testing-library/jest-dom/dist/matchers";
 import { useState } from "react";
 import { Container } from "react-bootstrap";
 import Card from "./Card";
+import angular from "../img/angular.png";
+import css from "../img/css.png";
+import html from "../img/html.png";
+import js from "../img/js.png";
+import nodejs from "../img/nodejs.png";
+import react from "../img/react.png";
+import scss from "../img/scss.png";
+import vue from "../img/vue.png";
 
 export default function Cards() {
   const [items, setItems] = useState(
     [
-      { id: 1, img: "/img/html.png", stat: "" },
-      { id: 1, img: "/img/html.png", stat: "" },
-      { id: 2, img: "/img/css.png", stat: "" },
-      { id: 2, img: "/img/css.png", stat: "" },
-      { id: 3, img: "/img/js.png", stat: "" },
-      { id: 3, img: "/img/js.png", stat: "" },
-      { id: 4, img: "/img/scss.png", stat: "" },
-      { id: 4, img: "/img/scss.png", stat: "" },
-      { id: 5, img: "/img/react.png", stat: "" },
-      { id: 5, img: "/img/react.png", stat: "" },
-      { id: 6, img: "/img/vue.png", stat: "" },
-      { id: 6, img: "/img/vue.png", stat: "" },
-      { id: 7, img: "/img/angular.png", stat: "" },
-      { id: 7, img: "/img/angular.png", stat: "" },
-      { id: 8, img: "/img/nodejs.png", stat: "" },
-      { id: 8, img: "/img/nodejs.png", stat: "" },
+      { id: 1, img: html, stat: "" },
+      { id: 1, img: html, stat: "" },
+      { id: 2, img: css, stat: "" },
+      { id: 2, img: css, stat: "" },
+      { id: 3, img: js, stat: "" },
+      { id: 3, img: js, stat: "" },
+      { id: 4, img: scss, stat: "" },
+      { id: 4, img: scss, stat: "" },
+      { id: 5, img: react, stat: "" },
+      { id: 5, img: react, stat: "" },
+      { id: 6, img: vue, stat: "" },
+      { id: 6, img: vue, stat: "" },
+      { id: 7, img: angular, stat: "" },
+      { id: 7, img: angular, stat: "" },
+      { id: 8, img: nodejs, stat: "" },
+      { id: 8, img: nodejs, stat: "" },
     ].sort(() => Math.random() - 0.5)
   );
 
